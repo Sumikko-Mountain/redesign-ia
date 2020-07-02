@@ -92,7 +92,7 @@ const renderStudio = (json) => {//シートごとに使い分ける
                 const snsIcon_site = document.createElement("img");
                 linkOnIcon_site.className = 'sns-link';
                 snsIcon_site.className = 'sns-icon';
-                snsIcon_site.src = "../img/icon/Site/LINK_Grey.png";
+                snsIcon_site.src = "../img/icon/Site/LINK_Bold.png";
                 snsIcon_site.alt = studio['name-ja'] + "_web site link";
                 linkOnIcon_site.href = studio['site-link'];
                 linkOnIcon_site.target = "_blank";
@@ -158,7 +158,7 @@ const renderStudio = (json) => {//シートごとに使い分ける
                 linkIconA.className = 'sns-link';
                 const linkIcon = document.createElement("img");
                 linkIcon.className = 'faculty-sitelink-icon';
-                linkIcon.src = "../img/icon/site/LINK.png";
+                linkIcon.src = "../img/icon/site/LINK_Grey.png";
                 linkIcon.alt = "website：" + studio['f-link-title'];
                 linkIconA.href = studio['f-link'];
                 linkIconA.target = "_blank";
