@@ -92,7 +92,7 @@ const renderStudio = (json) => {//シートごとに使い分ける
                 const snsIcon_site = document.createElement("img");
                 linkOnIcon_site.className = 'sns-link';
                 snsIcon_site.className = 'sns-icon';
-                snsIcon_site.src = "../img/icon/Site/LINK_Bold.png";
+                snsIcon_site.src = "../img/icon/Site/LINK_Grey.png";
                 snsIcon_site.alt = studio['name-ja'] + "_web site link";
                 linkOnIcon_site.href = studio['site-link'];
                 linkOnIcon_site.target = "_blank";
