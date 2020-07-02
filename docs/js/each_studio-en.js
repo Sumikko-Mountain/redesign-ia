@@ -19,14 +19,10 @@ const renderStudio = (json) => {//シートごとに使い分ける
 
 
             const studioLeftSec_Pre = document.createElement('section');
-
             const studioTitleDiv = document.createElement('div');
 
-            if (studio['core-ja'] == 'メディアアートコア・メディア創生') {
-                studioTitleDiv.className = 'title-red';
-            } else {
-                studioTitleDiv.className = 'title-blue';
-            }
+            studioTitleDiv.className = 'title';
+
             const studioTitleInnerDiv = document.createElement('div');
             studioTitleInnerDiv.className = 'inner-title';
             const studioTitleTextDiv = document.createElement('div');
@@ -36,7 +32,11 @@ const renderStudio = (json) => {//シートごとに使い分ける
 
             //スタジオタイトル　とコアの表示
             const studioCoreJa = document.createElement("p");
-            studioCoreJa.className = 'studio-core-top';
+            if (studio['core-ja'] == 'メディアアートコア・メディア創生') {
+                studioCoreJa.className = 'studio-core-top-media';
+            } else {
+                studioCoreJa.className = 'studio-core-top-product';
+            }
             studioCoreJa.textContent = studio['core-en'];
             studioTitleTextDiv.appendChild(studioCoreJa);
 
