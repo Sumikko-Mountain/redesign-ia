@@ -158,7 +158,7 @@ const renderStudio = (json) => {//シートごとに使い分ける
                 linkIconA.className = 'sns-link';
                 const linkIcon = document.createElement("img");
                 linkIcon.className = 'faculty-sitelink-icon';
-                linkIcon.src = "../img/icon/site/LINK_Grey.png";
+                linkIcon.src = "../img/icon/ite/LINK_Grey.png";
                 linkIcon.alt = "website：" + studio['f-link-title'];
                 linkIconA.href = studio['f-link'];
                 linkIconA.target = "_blank";
